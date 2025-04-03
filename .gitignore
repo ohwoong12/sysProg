@@ -1,22 +1,6 @@
 ﻿# Created by https://www.toptal.com/developers/gitignore/api/windows,visualstudio,c,c++
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudio,c,c++
 
-<<<<<<< Updated upstream
-/ch02/ex 2_1/.vs/ch02/v17/Browse.VC.opendb
-/ch03/ch03/.vs/ch03/v17/Browse.VC.opendb
-# Created by https://www.toptal.com/developers/gitignore/api/windows,visualstudio,c++
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudio,c++
-
-### C++ ###
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-=======
 ### C ###
 # Prerequisites
 *.d
@@ -31,18 +15,11 @@
 *.ilk
 *.map
 *.exp
->>>>>>> Stashed changes
 
 # Precompiled Headers
 *.gch
 *.pch
 
-<<<<<<< Updated upstream
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-=======
 # Libraries
 *.lib
 *.a
@@ -87,7 +64,6 @@ dkms.conf
 # Precompiled Headers
 
 # Compiled Dynamic libraries
->>>>>>> Stashed changes
 
 # Fortran module files
 *.mod
@@ -95,19 +71,8 @@ dkms.conf
 
 # Compiled Static libraries
 *.lai
-<<<<<<< Updated upstream
-*.la
-*.a
-*.lib
 
 # Executables
-*.exe
-*.out
-*.app
-=======
-
-# Executables
->>>>>>> Stashed changes
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -210,15 +175,8 @@ StyleCopReport.xml
 *_i.c
 *_p.c
 *_h.h
-<<<<<<< Updated upstream
-*.ilk
 *.meta
 *.iobj
-*.pdb
-=======
-*.meta
-*.iobj
->>>>>>> Stashed changes
 *.ipdb
 *.pgc
 *.pgd
