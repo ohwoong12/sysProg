@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="kurnelObject.cpp">
+    <ClCompile Include="kernelObjectShare.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
