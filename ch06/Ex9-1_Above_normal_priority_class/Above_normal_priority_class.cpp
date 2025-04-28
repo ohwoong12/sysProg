@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <tchar.h>
 #include <windows.h>
-int _tmain(int argc, TCHAR* argv[])
-{
+
+int _tmain(int argc, TCHAR* argv[]) {
 	STARTUPINFO siNormal = { 0, };
 	PROCESS_INFORMATION piNormal;
 	TCHAR commandOne[] = _T("Ex9-2_Normal_priority_class.exe");
+
 	STARTUPINFO siBelow = { 0, };
 	PROCESS_INFORMATION piBelow;
 	TCHAR commandTwo[] = _T("Ex9-3_Below_normal_priority_class.exe");
@@ -19,6 +20,7 @@ int _tmain(int argc, TCHAR* argv[])
 	CreateProcess(NULL, commandTwo, NULL, NULL,	TRUE, 0, NULL, NULL, &siBelow, &piBelow);
 
 	int count = 0;
+
 	while (1) {
 		for (DWORD i = 0; i < 10000; i++)
 			for (DWORD j = 0; j < 10000; j++);
@@ -30,4 +32,4 @@ int _tmain(int argc, TCHAR* argv[])
 	}
 
 	return 0;
-}
+}
