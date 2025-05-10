@@ -237,6 +237,7 @@ void sort_op(void)
 	PROCESS_INFORMATION pi;
 	si.cb = sizeof(si);
 	if (!_tcscmp(cmdTokenList[1], _T(">"))) { // 같을 때 리턴 값 0
+
 		// "sort > sort.txt"와 같이 명령어가 입력되면 아래 코드 실행
 		SECURITY_ATTRIBUTES sa = { sizeof(SECURITY_ATTRIBUTES), NULL, TRUE };
 		HANDLE hFile = CreateFile(cmdTokenList[2], GENERIC_WRITE, FILE_SHARE_READ, &sa, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
@@ -244,6 +245,7 @@ void sort_op(void)
 		si.hStdInput = GetStdHandle(STD_INPUT_HANDLE);
 		si.hStdError = GetStdHandle(STD_ERROR_HANDLE);
 		si.dwFlags |= STARTF_USESTDHANDLES;
+
 		// cmdTokenList[0] -> sort
 		isRun = CreateProcess(NULL, cmdTokenList[0], NULL, NULL, TRUE, 0, NULL, NULL, &si, &pi);
 		WaitForSingleObject(pi.hProcess, INFINITE);
