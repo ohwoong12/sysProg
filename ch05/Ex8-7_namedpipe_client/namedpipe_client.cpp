@@ -57,6 +57,6 @@ int _tmain(int argc, TCHAR* argv[]) {
 		_tprintf(_T("%s \n"), readDataBuf);
 	}
 
-	CloseHandle(&hPipe);
+	CloseHandle(hPipe);
 	return 0;
 }
