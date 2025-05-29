@@ -1,6 +1,6 @@
 /*
 SystemInfo.cpp
-프로그램 설명 : 시스템의 페이지 및 AGB 크기 정보 확인
+프로그램 설명 : Windows 시스템의 페이지 및 AGB 크기 정보 확인
 */
 
 #include <stdio.h>
@@ -9,9 +9,9 @@ SystemInfo.cpp
 
 int _tmain(int argc, TCHAR argv[])
 {
-	SYSTEM_INFO si;	// SYSTEM_INFO 구조체 선언
+	SYSTEM_INFO si;			// SYSTEM_INFO 구조체 선언
 	DWORD alloGranularity;
-	DWORD pageSize;
+	DWORD pageSize;			// 할당 정렬 단위 (AGB), 일반적으로 64KB
 
 	GetSystemInfo(&si);	// 시스템 정보를 얻기 위하여 호출
 	
